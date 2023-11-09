@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 900vh;
+    background-color: black;
+}
+
+nav.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0px 40px 0px;
+    box-shadow: 3px 0px 0px white;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 220px;
+}
+
+.btn-expandir {
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -25px;
+}
+
+.btn-expandir i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.2s;
+}
+
+ul li.ativo {
+    background-color: black;
+}
+
+ul li.item-menu:hover {
+    background-color: black;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 100px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 20px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+section {
+    margin-left: 73px;
+}
+
+.div1 {
+    /* background-color: red; */
+    text-align: center;
+    position: relative;
+}
+
+.div1 img {
+    width: 100%;
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("./wc1781676.png");
+}
+
+.overlay-item {
+    flex: 0 0 33%;
+    /* Cada div deve ocupar 33% da largura */
+    height: 100px;
+    /* Altura desejada */
+    background-color: rgba(0, 0, 0, 0.7);
+}
