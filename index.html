@@ -20,16 +20,14 @@
             box-sizing: border-box;
         }
 
-        /* body {
-            height: 900vh;
-        } */
+        /* menu-lateral */
 
         .menu-lateral img {
             width: 80px;
             display: flex;
-            border-left: 3px solid #f2f2f2;
             border-right: 3px solid #f2f2f2;
             border-bottom: 3px solid #f2f2f2;
+            border-left: 3px solid #f2f2f2;
         }
 
         nav.menu-lateral {
@@ -71,7 +69,6 @@
         ul li.item-menu {
             transition: 0.2s;
             border-bottom: 1px solid #f2f2f2;
-            /* border-top: 1px solid #f2f2f2; */
         }
 
         ul li.ativo {
@@ -81,7 +78,6 @@
 
         ul li.item-menu:hover {
             background-color: #f2f2f2;
-            /* border-radius: 30px 0px 0px 30px; */
         }
 
         ul li.item-menu a {
@@ -98,28 +94,31 @@
         }
 
         ul li.item-menu a .txt-link {
-            margin-left: 100px;
+            margin-left: 80px;
             transition: 0.5s;
             opacity: 0;
         }
 
         nav.menu-lateral.expandir .txt-link {
-            margin-left: 30px;
+            margin-left: 20px;
             opacity: 1;
         }
 
         ul li.item-menu a .icon i {
             font-size: 18px;
             color: #ED1B24;
-            width: 25px;
+            width: 30px;
         }
+
+        /* menu-lateral */
 
         section {
             margin-left: 83px;
         }
 
+        /*  */
+
         .div1 {
-            background-color: #ED1B24;
             text-align: center;
             position: relative;
         }
@@ -168,7 +167,6 @@
         }
 
         .bloc1 {
-            /* background-color: blue; */
             width: 50%;
             text-align: left;
             padding-left: 20px;
@@ -179,7 +177,7 @@
             font-weight: bold;
             letter-spacing: 1px;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 21px;
         }
 
         .bloc1 h2 {
@@ -202,42 +200,51 @@
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
             color: #f2f2f2;
-            font-size: 15px;
+            font-size: 13px;
             letter-spacing: 1px;
             background-color: #029E42;
-            padding: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.2s;
+            border: 2px solid #029E42;
+        }
+
+        .bloc2 a:hover {
+            background-color: #f2f2f2;
+            border: 2px solid #029E42;
+            color: #029E42;
         }
 
         .bloc2 .fa-whatsapp {
-            font-size: 18px;
+            font-size: 15px;
             margin-right: 10px;
-            font-weight: bold;
+            font-weight: normal;
         }
     </style>
     <title>Inicial</title>
 </head>
 
 <body>
+
+    <!-- menu-lateral -->
+
     <nav class="menu-lateral">
         <a href="index.html"><img title="Chute Boxe Siam Pato Branco" src="logo-siam.jpg" alt=""></a>
 
 
         <div class="btn-expandir">
-            <!-- <i title="Menu" class="bi bi-list" id="btn-exp"></i> -->
             <i title="Expandir" class="fas fa-solid fa-list" id="btn-exp"></i>
         </div>
 
         <ul>
             <li class="item-menu ativo">
                 <a title="Home" href="#">
-                    <!-- <span class="icon"><i class="bi bi-house"></i></span> -->
-                    <span class="icon"> <i class="fas fa-solid fa-home"></i></span>
+                    <span class="icon"><i class="fas fa-solid fa-home"></i></span>
                     <span class="txt-link">Home</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a title="Lutas" href="#">
-                    <!-- <span class="icon"><i class="bi bi-person-arms-up"></i></span> -->
                     <span class="icon"><i class="fas fa-solid fa-fist-raised"></i></span>
                     </span>
                     <span class="txt-link">Lutas</span>
@@ -245,14 +252,12 @@
             </li>
             <li class="item-menu">
                 <a title="Professores" href="#">
-                    <!-- <span class="icon"><i class="bi bi-person-square"></i></span> -->
                     <span class="icon"> <i class="fas fa-solid fa-user"></i></span>
                     <span class="txt-link">Professores</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a title="Contato" href="#">
-                    <!-- <span class="icon"><i class="bi bi-telephone-inbound"></i></span> -->
                     <span class="icon"><i class="fas fa-solid fa-phone"></i></span>
                     <span class="txt-link">Contato</span>
                 </a>
@@ -265,7 +270,6 @@
             </li>
             <li class="item-menu">
                 <a title="Política de Privacidade" href="#">
-                    <!-- <span class="icon"><i class="bi bi-shield-lock"></i></span> -->
                     <span class="icon"><i class="fas fa-solid fa-lock"></i></span>
                     <span class="txt-link">Privacidade</span>
                 </a>
@@ -273,11 +277,12 @@
 
         </ul>
 
-
-
     </nav>
+    <!-- menu-lateral -->
 
     <section>
+
+        <!-- container -->
         <div class="container">
 
             <div class="bloc1">
@@ -286,25 +291,26 @@
             </div>
 
             <div class="bloc2">
-                <a href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a>
+                <a title="Dúvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a>
             </div>
 
         </div>
 
+        <!-- container -->
 
-
+        <!-- div1 -->
         <div class="div1">
 
             <img src="./wc1781676.png" alt="">
-            <div class="overlay">
+            <!-- <div class="overlay">
                 <div class="overlay-item"><a href="#">
 
                         Galeria</a></div>
                 <div class="overlay-item"><a href="#">Modalidades</a></div>
                 <div class="overlay-item"><a href="#">Alunos</a></div>
-            </div>
+            </div> -->
         </div>
-
+        <!-- div1 -->
 
     </section>
     <script src="menu.js"></script>
