@@ -14,121 +14,122 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @media (min-width: 768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        /* menu-lateral */
+            /* menu-lateral */
 
-        .menu-lateral img {
-            width: 80px;
-            display: flex;
-            border-right: 3px solid #f2f2f2;
-            border-bottom: 3px solid #f2f2f2;
-            border-left: 3px solid #f2f2f2;
-        }
+            .menu-lateral img {
+                width: 80px;
+                display: flex;
+                border-right: 3px solid #f2f2f2;
+                border-bottom: 3px solid #f2f2f2;
+                border-left: 3px solid #f2f2f2;
+            }
 
-        nav.menu-lateral {
-            border-top: 3px solid #f2f2f2;
-            z-index: 9999;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 80px;
-            height: 100%;
-            background-color: black;
-            box-shadow: 3px 0px 0px #f2f2f2;
-            overflow: hidden;
-            transition: 0.5s;
-        }
+            nav.menu-lateral {
+                border-top: 3px solid #f2f2f2;
+                z-index: 9999;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 80px;
+                height: 100%;
+                background-color: black;
+                box-shadow: 3px 0px 0px #f2f2f2;
+                overflow: hidden;
+                transition: 0.5s;
+            }
 
-        nav.menu-lateral.expandir {
-            width: 200px;
-        }
+            nav.menu-lateral.expandir {
+                width: 200px;
+            }
 
-        .btn-expandir {
-            display: flex;
-        }
+            .btn-expandir {
+                display: flex;
+            }
 
-        .btn-expandir i {
-            color: #ED1B24;
-            font-size: 18px;
-            cursor: pointer;
-            width: 100%;
-            padding: 25px 31px;
-            border-bottom: 1px solid #f2f2f2;
-        }
+            .btn-expandir i {
+                color: #ED1B24;
+                font-size: 18px;
+                cursor: pointer;
+                width: 100%;
+                padding: 25px 31px;
+                border-bottom: 1px solid #f2f2f2;
+            }
 
-        ul {
-            height: 100%;
-            list-style-type: none;
-        }
+            ul {
+                height: 100%;
+                list-style-type: none;
+            }
 
-        ul li.item-menu {
-            transition: 0.2s;
-            border-bottom: 1px solid #f2f2f2;
-        }
+            ul li.item-menu {
+                transition: 0.2s;
+                border-bottom: 1px solid #f2f2f2;
+            }
 
-        ul li.ativo {
-            background-color: #f2f2f2;
+            ul li.ativo {
+                background-color: #f2f2f2;
 
-        }
+            }
 
-        ul li.item-menu:hover {
-            background-color: #f2f2f2;
-        }
+            ul li.item-menu:hover {
+                background-color: #f2f2f2;
+            }
 
-        ul li.item-menu a {
-            color: #ED1B24;
-            text-decoration: none;
-            font-size: 15px;
-            padding: 15px 10px;
-            display: flex;
-            padding-left: 30px;
-            margin-bottom: 5px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+            ul li.item-menu a {
+                color: #ED1B24;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 15px 10px;
+                display: flex;
+                padding-left: 30px;
+                margin-bottom: 5px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
 
-        ul li.item-menu a .txt-link {
-            margin-left: 80px;
-            transition: 0.5s;
-            opacity: 0;
-        }
+            ul li.item-menu a .txt-link {
+                margin-left: 80px;
+                transition: 0.5s;
+                opacity: 0;
+            }
 
-        nav.menu-lateral.expandir .txt-link {
-            margin-left: 20px;
-            opacity: 1;
-        }
+            nav.menu-lateral.expandir .txt-link {
+                margin-left: 20px;
+                opacity: 1;
+            }
 
-        ul li.item-menu a .icon i {
-            font-size: 18px;
-            color: #ED1B24;
-            width: 30px;
-        }
+            ul li.item-menu a .icon i {
+                font-size: 18px;
+                color: #ED1B24;
+                width: 30px;
+            }
 
-        /* menu-lateral */
+            /* menu-lateral */
 
-        section {
-            margin-left: 83px;
-        }
+            section {
+                margin-left: 83px;
+            }
 
-        /*  */
+            /*  */
 
-        .div1 {
-            text-align: center;
-            position: relative;
-        }
+            .div1 {
+                text-align: center;
+                position: relative;
+            }
 
-        .div1 img {
-            width: 100%;
-            display: flex;
-        }
+            .div1 img {
+                width: 100%;
+                display: flex;
+            }
 
-        .overlay {
+            /* .overlay {
             display: flex;
             justify-content: space-evenly;
             position: absolute;
@@ -156,69 +157,92 @@
             font-weight: normal;
             letter-spacing: 1px;
             font-size: 20px;
-        }
+        } */
 
-        .container {
-            background-color: #f2f2f2;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
+            /* container */
 
-        .bloc1 {
-            width: 50%;
-            text-align: left;
-            padding-left: 20px;
-        }
+            .container {
+                background-color: #f2f2f2;
+                display: flex;
+            }
 
-        .bloc1 h1 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-size: 21px;
-        }
+            .bloc1 {
 
-        .bloc1 h2 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            letter-spacing: 1px;
-            font-size: 15px;
-        }
+                background-color: #ED1B24;
+                width: 50%;
+            }
 
-        .bloc2 {
-            width: 50%;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: right;
-        }
+            .bloc1 h1 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: 21px;
+            }
 
-        .bloc2 a {
-            text-decoration: none;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            color: #f2f2f2;
-            font-size: 13px;
-            letter-spacing: 1px;
-            background-color: #029E42;
-            padding: 8px;
-            border-radius: 5px;
-            transition: 0.2s;
-            border: 2px solid #029E42;
-        }
+            .bloc1 h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 15px;
+            }
 
-        .bloc2 a:hover {
-            background-color: #f2f2f2;
-            border: 2px solid #029E42;
-            color: #029E42;
-        }
+            .bloc2 {
+                width: 50%;
+                display: flex;
+                justify-content: right;
+            }
 
-        .bloc2 .fa-whatsapp {
-            font-size: 15px;
-            margin-right: 10px;
-            font-weight: normal;
+            .bloc22,
+            .bloc23 {
+                /* background-color: #ED1B24; */
+                display: flex;
+            }
+
+            .bloc22 a,
+            .bloc23 a {
+                margin: 0px 10px;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                padding: 1px;
+                transition: 0.2s;
+                border: 2px solid #f2f2f2;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bloc22 a:hover {
+                background-color: #f2f2f2;
+                color: #ED1B24;
+            }
+
+            .bloc23 a:hover {
+                background-color: #f2f2f2;
+                color: #029E42;
+            }
+
+            .bloc22 i {
+                margin-right: 10px;
+                display: flex;
+                font-size: 15px;
+                vertical-align: middle;
+            }
+
+            .bloc23 i {
+                margin-right: 10px;
+                display: flex;
+                font-size: 15px;
+                font-weight: normal;
+                vertical-align: middle;
+            }
+
+            /* container */
         }
     </style>
     <title>Inicial</title>
@@ -291,7 +315,18 @@
             </div>
 
             <div class="bloc2">
-                <a title="Dúvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a>
+
+                <div class="bloc22">
+                    <a title="CHUTE BOXE SIAM, Av. Tupi, 1655 - Brasília, Pato Branco - PR, 85504-014" target="_blank"
+                        href="https://www.google.com/maps/dir/-26.2437224,-52.6707147/chute+boxe+siam/@-26.2357022,-52.6987783,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94e553192105fd2f:0xfbb4d80b75827e17!2m2!1d-52.672391!2d-26.2200869?entry=ttu"><i
+                            class="fas fa-solid fa-map-marker-alt"></i>Localização</a>
+                </div>
+
+                <div class="bloc23">
+                    <a title="Duvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>(46)
+                        99999-9999</a>
+                </div>
+                <!-- <a title="Dúvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a> -->
             </div>
 
         </div>
