@@ -20,15 +20,13 @@
             box-sizing: border-box;
         }
 
-        body {
+        /* body {
             height: 900vh;
-            /* background-color: black; */
-        }
+        } */
 
         .menu-lateral img {
             width: 80px;
             display: flex;
-            /* padding: 5px; */
             border-left: 3px solid #f2f2f2;
             border-right: 3px solid #f2f2f2;
             border-bottom: 3px solid #f2f2f2;
@@ -42,7 +40,7 @@
             left: 0;
             width: 80px;
             height: 100%;
-            background-color: #333;
+            background-color: black;
             box-shadow: 3px 0px 0px #f2f2f2;
             overflow: hidden;
             transition: 0.5s;
@@ -53,14 +51,7 @@
         }
 
         .btn-expandir {
-
-            /* width: 7; */
             display: flex;
-            /* margin-top: -40px; */
-            /* margin-left: 20px;
-            margin-bottom: 10px;
-            margin-top: -25px; */
-
         }
 
         .btn-expandir i {
@@ -68,39 +59,38 @@
             font-size: 18px;
             cursor: pointer;
             width: 100%;
-            padding: 20px 28px;
+            padding: 25px 31px;
+            border-bottom: 1px solid #f2f2f2;
         }
 
         ul {
-
             height: 100%;
             list-style-type: none;
         }
 
         ul li.item-menu {
-            border-radius: 30px 0px 0px 30px;
-
             transition: 0.2s;
+            border-bottom: 1px solid #f2f2f2;
+            /* border-top: 1px solid #f2f2f2; */
         }
 
         ul li.ativo {
-            border-radius: 30px 0px 0px 30px;
             background-color: #f2f2f2;
+
         }
 
         ul li.item-menu:hover {
             background-color: #f2f2f2;
-
-            border-radius: 30px 0px 0px 30px;
+            /* border-radius: 30px 0px 0px 30px; */
         }
 
         ul li.item-menu a {
-            color: black;
+            color: #ED1B24;
             text-decoration: none;
             font-size: 15px;
             padding: 15px 10px;
             display: flex;
-            padding-left: 26px;
+            padding-left: 30px;
             margin-bottom: 5px;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
@@ -111,17 +101,15 @@
             margin-left: 100px;
             transition: 0.5s;
             opacity: 0;
-
         }
 
         nav.menu-lateral.expandir .txt-link {
-            margin-left: 20px;
+            margin-left: 30px;
             opacity: 1;
         }
 
         ul li.item-menu a .icon i {
             font-size: 18px;
-            /* padding-right: 20px; */
             color: #ED1B24;
             width: 25px;
         }
@@ -131,7 +119,7 @@
         }
 
         .div1 {
-            background-color: red;
+            background-color: #ED1B24;
             text-align: center;
             position: relative;
         }
@@ -171,19 +159,59 @@
             font-size: 20px;
         }
 
-        .teste {
+        .container {
             background-color: #f2f2f2;
             text-align: center;
             justify-content: center;
             align-items: center;
+            display: flex;
         }
 
-        .teste h1 {
-            padding: 10px 0px;
+        .bloc1 {
+            /* background-color: blue; */
+            width: 50%;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .bloc1 h1 {
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
             letter-spacing: 1px;
             text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .bloc1 h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+
+        .bloc2 {
+            width: 50%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: right;
+        }
+
+        .bloc2 a {
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: #f2f2f2;
+            font-size: 15px;
+            letter-spacing: 1px;
+            background-color: #029E42;
+            padding: 10px;
+        }
+
+        .bloc2 .fa-whatsapp {
+            font-size: 18px;
+            margin-right: 10px;
+            font-weight: bold;
         }
     </style>
     <title>Inicial</title>
@@ -250,9 +278,21 @@
     </nav>
 
     <section>
-        <div class="teste">
-            <h1>chute boxe siam pato branco</h1>
+        <div class="container">
+
+            <div class="bloc1">
+                <h1>descricao</h1>
+                <h2>escola de artes marciais</h2>
+            </div>
+
+            <div class="bloc2">
+                <a href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a>
+            </div>
+
         </div>
+
+
+
         <div class="div1">
 
             <img src="./wc1781676.png" alt="">
