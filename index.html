@@ -19,34 +19,142 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+
             }
 
             /* menu-lateral */
 
-            .menu-lateral img {
-                width: 80px;
-                display: flex;
-                border-right: 3px solid #f2f2f2;
-                border-bottom: 3px solid #f2f2f2;
-                border-left: 3px solid #f2f2f2;
+            /* body {
+                height: 700px;
+            } */
+
+            section {
+                /* background-color: black; */
+                margin-left: 80px;
             }
 
+            /* container */
+
+            .container {
+                box-shadow: 0px 0px 3px #202020;
+                background-color: #f2f2f2;
+                display: flex;
+                position: fixed;
+                z-index: 9999;
+                width: 100%;
+                border: 1px solid #f2f2f2;
+            }
+
+            .bloc01 {
+                background-color: black;
+            }
+
+            .bloc01 img {
+                padding: 0px 10px;
+                object-fit: cover;
+                display: flex;
+            }
+
+            .bloc1 {
+                width: 50%;
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            .bloc1 h1 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: 18px;
+                display: flex;
+                margin: 0;
+            }
+
+            .bloc1 h2 {
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+
+            .bloc2 {
+                width: 50%;
+                display: flex;
+                justify-content: right;
+            }
+
+            .bloc22,
+            .bloc23 {
+                display: flex;
+            }
+
+            .bloc22 a,
+            .bloc23 a {
+                margin: 0px 10px;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: #202020;
+                font-size: 15px;
+                letter-spacing: 1px;
+                padding: 1px;
+                transition: 0.2s;
+                border: 2px solid #f2f2f2;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bloc22 a:hover {
+                background-color: #f2f2f2;
+                color: #ED1B24;
+            }
+
+            .bloc23 a:hover {
+                background-color: #f2f2f2;
+                color: #029E42;
+            }
+
+            .bloc22 i {
+                margin-right: 10px;
+                display: flex;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+
+            .bloc23 i {
+                margin-right: 10px;
+                display: flex;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+
+            /* container */
+
+            /* nav-menu-lateral */
+
             nav.menu-lateral {
-                border-top: 3px solid #f2f2f2;
                 z-index: 9999;
                 position: fixed;
-                top: 0;
+                top: 61px;
                 left: 0;
                 width: 80px;
                 height: 100%;
-                background-color: black;
-                box-shadow: 3px 0px 0px #f2f2f2;
+                background-color: #202020;
+                box-shadow: 1px 0px 0px black;
                 overflow: hidden;
                 transition: 0.5s;
             }
 
             nav.menu-lateral.expandir {
-                width: 200px;
+                width: 220px;
             }
 
             .btn-expandir {
@@ -111,138 +219,20 @@
                 width: 30px;
             }
 
-            /* menu-lateral */
+            /* nav-menu-lateral */
 
-            section {
-                margin-left: 83px;
-            }
+            /* div2 */
 
-            /*  */
-
-            .div1 {
-                text-align: center;
-                position: relative;
-            }
-
-            .div1 img {
+            .div2 img {
                 width: 100%;
                 display: flex;
+                object-fit: cover;
             }
 
-            /* .overlay {
-            display: flex;
-            justify-content: space-evenly;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
 
-        .overlay-item {
-            flex: 0 0 25%;
-        }
+            /* div2 */
 
-        .overlay-item a {
-            background-color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            color: white;
-            padding: 10px 0px;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            border-left: 2px solid white;
-            border-right: 2px solid white;
-            border-bottom: 2px solid white;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: normal;
-            letter-spacing: 1px;
-            font-size: 20px;
-        } */
 
-            /* container */
-
-            .container {
-                background-color: #f2f2f2;
-                display: flex;
-            }
-
-            .bloc1 {
-
-                background-color: #ED1B24;
-                width: 50%;
-            }
-
-            .bloc1 h1 {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                font-size: 21px;
-            }
-
-            .bloc1 h2 {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                letter-spacing: 1px;
-                font-size: 15px;
-            }
-
-            .bloc2 {
-                width: 50%;
-                display: flex;
-                justify-content: right;
-            }
-
-            .bloc22,
-            .bloc23 {
-                /* background-color: #ED1B24; */
-                display: flex;
-            }
-
-            .bloc22 a,
-            .bloc23 a {
-                margin: 0px 10px;
-                text-decoration: none;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                color: black;
-                font-size: 13px;
-                letter-spacing: 1px;
-                padding: 1px;
-                transition: 0.2s;
-                border: 2px solid #f2f2f2;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .bloc22 a:hover {
-                background-color: #f2f2f2;
-                color: #ED1B24;
-            }
-
-            .bloc23 a:hover {
-                background-color: #f2f2f2;
-                color: #029E42;
-            }
-
-            .bloc22 i {
-                margin-right: 10px;
-                display: flex;
-                font-size: 15px;
-                vertical-align: middle;
-            }
-
-            .bloc23 i {
-                margin-right: 10px;
-                display: flex;
-                font-size: 15px;
-                font-weight: normal;
-                vertical-align: middle;
-            }
-
-            /* container */
         }
     </style>
     <title>Inicial</title>
@@ -253,8 +243,6 @@
     <!-- menu-lateral -->
 
     <nav class="menu-lateral">
-        <a href="index.html"><img title="Chute Boxe Siam Pato Branco" src="logo-siam.jpg" alt=""></a>
-
 
         <div class="btn-expandir">
             <i title="Expandir" class="fas fa-solid fa-list" id="btn-exp"></i>
@@ -271,7 +259,7 @@
                 <a title="Lutas" href="#">
                     <span class="icon"><i class="fas fa-solid fa-fist-raised"></i></span>
                     </span>
-                    <span class="txt-link">Lutas</span>
+                    <span class="txt-link">Modalidades</span>
                 </a>
             </li>
             <li class="item-menu">
@@ -286,12 +274,12 @@
                     <span class="txt-link">Contato</span>
                 </a>
             </li>
-            <li class="item-menu">
+            <!-- <li class="item-menu">
                 <a title="Localização" href="#">
                     <span class="icon"> <i class="fas fa-solid fa-map-marker-alt"></i></span>
                     <span class="txt-link">Localização</span>
                 </a>
-            </li>
+            </li> -->
             <li class="item-menu">
                 <a title="Política de Privacidade" href="#">
                     <span class="icon"><i class="fas fa-solid fa-lock"></i></span>
@@ -303,38 +291,42 @@
 
     </nav>
     <!-- menu-lateral -->
+    <!-- container -->
+    <div class="container">
 
-    <section>
-
-        <!-- container -->
-        <div class="container">
-
-            <div class="bloc1">
-                <h1>descricao</h1>
-                <h2>escola de artes marciais</h2>
-            </div>
-
-            <div class="bloc2">
-
-                <div class="bloc22">
-                    <a title="CHUTE BOXE SIAM, Av. Tupi, 1655 - Brasília, Pato Branco - PR, 85504-014" target="_blank"
-                        href="https://www.google.com/maps/dir/-26.2437224,-52.6707147/chute+boxe+siam/@-26.2357022,-52.6987783,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94e553192105fd2f:0xfbb4d80b75827e17!2m2!1d-52.672391!2d-26.2200869?entry=ttu"><i
-                            class="fas fa-solid fa-map-marker-alt"></i>Localização</a>
-                </div>
-
-                <div class="bloc23">
-                    <a title="Duvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>(46)
-                        99999-9999</a>
-                </div>
-                <!-- <a title="Dúvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a> -->
-            </div>
+        <div class="bloc01">
+            <a href="index.html"><img title="Chute Boxe Siam Pato Branco" src="logo-siam - Copia.jpg" alt=""></a>
 
         </div>
 
-        <!-- container -->
+        <div class="bloc1">
+            <h1>nome da escola</h1>
+            <h2>escola de artes marciais</h2>
+        </div>
+
+        <div class="bloc2">
+
+            <div class="bloc22">
+                <a title="CHUTE BOXE SIAM, Av. Tupi, 1655 - Brasília, Pato Branco - PR, 85504-014" target="_blank"
+                    href="https://www.google.com/maps/dir/-26.2437224,-52.6707147/chute+boxe+siam/@-26.2357022,-52.6987783,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94e553192105fd2f:0xfbb4d80b75827e17!2m2!1d-52.672391!2d-26.2200869?entry=ttu"><i
+                        class="fas fa-solid fa-map-marker-alt"></i>Localização</a>
+            </div>
+
+            <div class="bloc23">
+                <a title="Duvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>Fale conosco</a>
+            </div>
+            <!-- <a title="Dúvidas? Clique aqui!" href="#"><i class="fab fa-whatsapp"></i>46 99999-9999</a> -->
+        </div>
+
+    </div>
+
+    <!-- container -->
+    <section>
+
+
 
         <!-- div1 -->
-        <div class="div1">
+        <div class="div2">
 
             <img src="./wc1781676.png" alt="">
             <!-- <div class="overlay">
@@ -344,9 +336,22 @@
                 <div class="overlay-item"><a href="#">Modalidades</a></div>
                 <div class="overlay-item"><a href="#">Alunos</a></div>
             </div> -->
+
+            <!-- <div class="div22">
+                <p>Explore as artes marciais na " escola de artes marciais"! <br><br> Oferecemos diversas modalidades,
+                    de muay
+                    thai a kung
+                    fu, em aulas focadas no desenvolvimento pessoal. <br><br> Venha fazer parte da nossa comunidade,
+                    onde cada
+                    movimento é uma expressão de arte e cada desafio é uma oportunidade para crescer. Vem treinar
+                    conosco!
+                </p>
+            </div> -->
+
+
         </div>
         <!-- div1 -->
-
+        gergerg
     </section>
     <script src="menu.js"></script>
 
