@@ -5,11 +5,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
 
+    html {
+        scroll-behavior: smooth;
+        background-color: black;
     }
 
     section {
-        padding: 61px 0px 0px 80px;
+        padding: 61px 0px 61px 80px;
     }
 
     /* container */
@@ -19,7 +23,7 @@
         background-color: #f2f2f2;
         display: flex;
         position: fixed;
-        z-index: 9999;
+        z-index: 99999;
         width: 100%;
         border: 1px solid #f2f2f2;
     }

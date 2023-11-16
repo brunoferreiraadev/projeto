@@ -43,3 +43,24 @@ if (currentUrl.includes("index.html")) {
     document.querySelector(".menu-lateral .home").classList.add("ativo");
 }
 // codigo para ficar selecionado a tag a referente a página ativa
+
+
+// função para recarregar a página e voltar no início do site
+
+// função para recarregar a página e voltar no início do site
+
+//comando para subir o site ao topo quando clicar na div inicio
+const botao = document.querySelector(".inicio");
+const inicio = document.querySelector("#top"); // Adicione um ID à tag <body> para referenciá-la aqui
+botao.addEventListener("click", function (event) {
+    event.preventDefault();
+    inicio.scrollIntoView({ behavior: "smooth" });
+});
+window.addEventListener("scroll", function () {
+    if (window.scrollY === 0) {
+        botao.classList.remove("visible");
+    } else {
+        botao.classList.add("visible");
+    }
+});
+//comando para subir o site ao topo quando clicar na div inicio

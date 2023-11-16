@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @media (min-width: 768px) {
-    body {
+
+    html {
+        scroll-behavior: smooth;
         background-color: black;
+    }
+
+    body {
+        display: none;
+        /* Oculta o corpo da página enquanto está sendo recarregado */
     }
 
     .title {
         background-color: #202020;
         text-align: center;
-        padding: 10px 0px;
+        padding: 20px 0px;
     }
 
     .title h1 {
@@ -16,7 +23,7 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 26px;
         letter-spacing: 2px;
     }
 
