@@ -1,16 +1,16 @@
 // expandir o menu
-var menuItem = document.querySelectorAll('.item-menu')
+// var menuItem = document.querySelectorAll('.item-menu')
 
-function selectLink() {
-    menuItem.forEach((item) =>
-        item.classList.remove('ativo')
-    )
-    this.classList.add('ativo')
-}
+// function selectLink() {
+//     menuItem.forEach((item) =>
+//         item.classList.remove('ativo')
+//     )
+//     this.classList.add('ativo')
+// }
 
-menuItem.forEach((item) =>
-    item.addEventListener('click', selectLink)
-)
+// menuItem.forEach((item) =>
+//     item.addEventListener('click', selectLink)
+// )
 // expandir o menu
 
 // var btnExp = document.querySelector('#btn-exp')
@@ -20,7 +20,7 @@ menuItem.forEach((item) =>
 //     menuSide.classList.toggle('expandir')
 // })
 
-
+// expandir o menu
 const menuLateral = document.querySelector(".menu-lateral");
 const btnExpandir = document.querySelector("#btn-exp");
 
@@ -33,3 +33,13 @@ document.addEventListener("click", (event) => {
         menuLateral.classList.remove("expandir");
     }
 });
+// expandir o menu
+
+// codigo para ficar selecionado a tag a referente a página ativa
+
+var currentUrl = window.location.href;
+
+if (currentUrl.includes("index.html")) {
+    document.querySelector(".menu-lateral .home").classList.add("ativo");
+}
+// codigo para ficar selecionado a tag a referente a página ativa

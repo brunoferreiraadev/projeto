@@ -5,237 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    <title>Home</title>
 
-        @media (min-width: 768px) {
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-
-            }
-
-            /* menu-lateral */
-
-            /* body {
-                height: 700px;
-            } */
-
-            section {
-                /* background-color: black; */
-                margin-left: 80px;
-            }
-
-            /* container */
-
-            .container {
-                box-shadow: 0px 0px 3px #202020;
-                background-color: #f2f2f2;
-                display: flex;
-                position: fixed;
-                z-index: 9999;
-                width: 100%;
-                border: 1px solid #f2f2f2;
-            }
-
-            .bloc01 {
-                background-color: black;
-            }
-
-            .bloc01 img {
-                padding: 0px 10px;
-                object-fit: cover;
-                display: flex;
-            }
-
-            .bloc1 {
-                width: 50%;
-                padding-left: 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-            }
-
-            .bloc1 h1 {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                font-size: 18px;
-                display: flex;
-                margin: 0;
-            }
-
-            .bloc1 h2 {
-                margin: 0;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                letter-spacing: 1px;
-                font-size: 13px;
-                margin-bottom: 5px;
-            }
-
-            .bloc2 {
-                width: 50%;
-                display: flex;
-                justify-content: right;
-            }
-
-            .bloc22,
-            .bloc23 {
-                display: flex;
-            }
-
-            .bloc22 a,
-            .bloc23 a {
-                margin: 0px 10px;
-                text-decoration: none;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                color: #202020;
-                font-size: 15px;
-                letter-spacing: 1px;
-                padding: 1px;
-                transition: 0.2s;
-                border: 2px solid #f2f2f2;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .bloc22 a:hover {
-                background-color: #f2f2f2;
-                color: #ED1B24;
-            }
-
-            .bloc23 a:hover {
-                background-color: #f2f2f2;
-                color: #029E42;
-            }
-
-            .bloc22 i {
-                margin-right: 10px;
-                display: flex;
-                font-size: 18px;
-                vertical-align: middle;
-            }
-
-            .bloc23 i {
-                margin-right: 10px;
-                display: flex;
-                font-size: 18px;
-                vertical-align: middle;
-            }
-
-            /* container */
-
-            /* nav-menu-lateral */
-
-            nav.menu-lateral {
-                z-index: 9999;
-                position: fixed;
-                top: 61px;
-                left: 0;
-                width: 80px;
-                height: 100%;
-                background-color: #202020;
-                box-shadow: 1px 0px 0px black;
-                overflow: hidden;
-                transition: 0.5s;
-            }
-
-            nav.menu-lateral.expandir {
-                width: 220px;
-            }
-
-            .btn-expandir {
-                display: flex;
-            }
-
-            .btn-expandir i {
-                color: #ED1B24;
-                font-size: 18px;
-                cursor: pointer;
-                width: 100%;
-                padding: 25px 31px;
-                border-bottom: 1px solid #f2f2f2;
-            }
-
-            ul {
-                height: 100%;
-                list-style-type: none;
-            }
-
-            ul li.item-menu {
-                transition: 0.2s;
-                border-bottom: 1px solid #f2f2f2;
-            }
-
-            ul li.ativo {
-                background-color: #f2f2f2;
-
-            }
-
-            ul li.item-menu:hover {
-                background-color: #f2f2f2;
-            }
-
-            ul li.item-menu a {
-                color: #ED1B24;
-                text-decoration: none;
-                font-size: 15px;
-                padding: 15px 10px;
-                display: flex;
-                padding-left: 30px;
-                margin-bottom: 5px;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                letter-spacing: 1px;
-            }
-
-            ul li.item-menu a .txt-link {
-                margin-left: 80px;
-                transition: 0.5s;
-                opacity: 0;
-            }
-
-            nav.menu-lateral.expandir .txt-link {
-                margin-left: 20px;
-                opacity: 1;
-            }
-
-            ul li.item-menu a .icon i {
-                font-size: 18px;
-                color: #ED1B24;
-                width: 30px;
-            }
-
-            /* nav-menu-lateral */
-
-            /* div2 */
-
-            .div2 img {
-                width: 100%;
-                display: flex;
-                object-fit: cover;
-            }
-
-
-            /* div2 */
-
-
-        }
-    </style>
-    <title>Inicial</title>
 </head>
 
 <body>
@@ -249,23 +27,23 @@
         </div>
 
         <ul>
-            <li class="item-menu ativo">
-                <a title="Home" href="#">
+            <li class="item-menu ativo home">
+                <a title="Home" href="index.html">
                     <span class="icon"><i class="fas fa-solid fa-home"></i></span>
                     <span class="txt-link">Home</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a title="Lutas" href="#">
+                <a title="Lutas" href="lutas.html">
                     <span class="icon"><i class="fas fa-solid fa-fist-raised"></i></span>
                     </span>
-                    <span class="txt-link">Modalidades</span>
+                    <span class="txt-link">Lutas</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a title="Professores" href="#">
-                    <span class="icon"> <i class="fas fa-solid fa-user"></i></span>
-                    <span class="txt-link">Professores</span>
+                <a title="Horário das lutas" href="#">
+                    <span class="icon"> <i class="fa-regular fa-clock"></i></span>
+                    <span class="txt-link">Horários</span>
                 </a>
             </li>
             <li class="item-menu">
@@ -274,12 +52,12 @@
                     <span class="txt-link">Contato</span>
                 </a>
             </li>
-            <!-- <li class="item-menu">
-                <a title="Localização" href="#">
-                    <span class="icon"> <i class="fas fa-solid fa-map-marker-alt"></i></span>
-                    <span class="txt-link">Localização</span>
+            <li class="item-menu">
+                <a title="Professores" href="#">
+                    <span class="icon"> <i class="fas fa-solid fa-user"></i></span>
+                    <span class="txt-link">Professores</span>
                 </a>
-            </li> -->
+            </li>
             <li class="item-menu">
                 <a title="Política de Privacidade" href="#">
                     <span class="icon"><i class="fas fa-solid fa-lock"></i></span>
@@ -291,6 +69,7 @@
 
     </nav>
     <!-- menu-lateral -->
+
     <!-- container -->
     <div class="container">
 
@@ -322,33 +101,9 @@
 
     <!-- container -->
     <section>
-
-
-
         <!-- div1 -->
         <div class="div2">
-
-            <img src="./wc1781676.png" alt="">
-            <!-- <div class="overlay">
-                <div class="overlay-item"><a href="#">
-
-                        Galeria</a></div>
-                <div class="overlay-item"><a href="#">Modalidades</a></div>
-                <div class="overlay-item"><a href="#">Alunos</a></div>
-            </div> -->
-
-            <!-- <div class="div22">
-                <p>Explore as artes marciais na " escola de artes marciais"! <br><br> Oferecemos diversas modalidades,
-                    de muay
-                    thai a kung
-                    fu, em aulas focadas no desenvolvimento pessoal. <br><br> Venha fazer parte da nossa comunidade,
-                    onde cada
-                    movimento é uma expressão de arte e cada desafio é uma oportunidade para crescer. Vem treinar
-                    conosco!
-                </p>
-            </div> -->
-
-
+            <img title="Ring" src="ring.jpg" alt="ring">
         </div>
         <!-- div1 -->
         gergerg

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    section {
+        padding: 61px 0px 0px 80px;
+    }
+
+    /* container */
+
+    .container {
+        box-shadow: 0px 0px 3px #202020;
+        background-color: #f2f2f2;
+        display: flex;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        border: 1px solid #f2f2f2;
+    }
+
+    .bloc01 {
+        background-color: black;
+    }
+
+    .bloc01 img {
+        padding: 0px 10px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .bloc1 {
+        width: 50%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .bloc1 h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 18px;
+        display: flex;
+        margin: 0;
+    }
+
+    .bloc1 h2 {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .bloc2 {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+    }
+
+    .bloc22,
+    .bloc23 {
+        display: flex;
+    }
+
+    .bloc22 a,
+    .bloc23 a {
+        margin: 0px 10px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: #202020;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 1px;
+        transition: 0.2s;
+        border: 2px solid #f2f2f2;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloc22 a:hover {
+        background-color: #f2f2f2;
+        color: #ED1B24;
+    }
+
+    .bloc23 a:hover {
+        background-color: #f2f2f2;
+        color: #029E42;
+    }
+
+    .bloc22 i {
+        margin-right: 10px;
+        display: flex;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .bloc23 i {
+        margin-right: 10px;
+        display: flex;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    /* container */
+
+    /* nav-menu-lateral */
+
+    nav.menu-lateral {
+        z-index: 9999;
+        position: fixed;
+        top: 61px;
+        left: 0;
+        width: 80px;
+        height: 100%;
+        background-color: #202020;
+        box-shadow: 1px 0px 0px #f2f2f2;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    nav.menu-lateral.expandir {
+        width: 220px;
+    }
+
+    .btn-expandir {
+        display: flex;
+    }
+
+    .btn-expandir i {
+        color: #ED1B24;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        padding: 25px 31px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    ul {
+        height: 100%;
+        list-style-type: none;
+    }
+
+    ul li.item-menu {
+        transition: 0.2s;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    /* ul li.ativo {
+        background-color: #f2f2f2;
+    } */
+
+    ul li.item-menu.ativo {
+        background-color: #f2f2f2;
+    }
+
+    ul li.item-menu:hover {
+        background-color: #f2f2f2;
+    }
+
+    ul li.item-menu a {
+        color: #ED1B24;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 15px 10px;
+        display: flex;
+        padding-left: 30px;
+        margin-bottom: 5px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    ul li.item-menu a .txt-link {
+        /* margin-left: 150px; */
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    nav.menu-lateral.expandir .txt-link {
+        margin-left: 20px;
+        opacity: 1;
+    }
+
+    ul li.item-menu a .icon i {
+        font-size: 18px;
+        color: #ED1B24;
+        width: 30px;
+    }
+
+    /* nav-menu-lateral */
+}
