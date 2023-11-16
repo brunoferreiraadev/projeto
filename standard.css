@@ -12,6 +12,73 @@
         background-color: black;
     }
 
+    body {
+        display: none;
+    }
+
+    /* links */
+    .links {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .links1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 15px;
+    }
+
+    .links1 a {
+        opacity: 85%;
+        padding: 5px 15px;
+        border-radius: 20px;
+        background-color: #f2f2f2;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: 0.2s;
+    }
+
+    .links1 a:hover {
+        opacity: 100%;
+        transition: 0.2s;
+    }
+
+    .links1 i {
+        width: 25px;
+        font-size: 15px;
+    }
+
+    .links1 a:nth-child(1) {
+        background-color: #ccc;
+        color: black;
+    }
+
+    .links1 a:nth-child(2) {
+        background-color: #029E42;
+        color: white;
+    }
+
+    .links1 a:nth-child(3) {
+        background-color: #ED1B24;
+        color: white;
+    }
+
+    .links1 a:nth-child(4) {
+        background-color: #1877F2;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    /* links */
+
     section {
         padding: 61px 0px 61px 80px;
     }

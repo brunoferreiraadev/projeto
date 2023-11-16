@@ -47,6 +47,37 @@ if (currentUrl.includes("index.html")) {
 
 // função para recarregar a página e voltar no início do site
 
+// Armazena a posição de rolagem antes de recarregar a página
+window.addEventListener('beforeunload', function () {
+    sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+});
+// Armazena a posição de rolagem antes de recarregar a página
+
+// Verifica se há uma posição de rolagem armazenada e a aplica após o carregamento da página
+window.addEventListener('load', function () {
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+
+    if (scrollPosition !== null) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+        sessionStorage.removeItem('scrollPosition'); // Limpa a posição de rolagem armazenada
+    }
+
+    // Exibe o corpo da página após o carregamento
+    document.body.style.display = 'block';
+});
+// Verifica se há uma posição de rolagem armazenada e a aplica após o carregamento da página
+
+// Recarrega a página completamente quando a tecla F5 é pressionada
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'F5') {
+        e.preventDefault();
+        sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+        document.body.style.display = 'none'; // Oculta o corpo da página antes de recarregar
+        window.location.reload(true);
+    }
+});
+// Recarrega a página completamente quando a tecla F5 é pressionada
+
 // função para recarregar a página e voltar no início do site
 
 //comando para subir o site ao topo quando clicar na div inicio
