@@ -1,24 +1,20 @@
-// expandir o menu
-// var menuItem = document.querySelectorAll('.item-menu')
+// recarrega o site e volta para o inicio sem aparecer que está subindo,
+// usei junto o preloader, funciona nas 3 opções, F5, CTRL + F5 e também no botão de recarregar a página no navegador
 
-// function selectLink() {
-//     menuItem.forEach((item) =>
-//         item.classList.remove('ativo')
-//     )
-//     this.classList.add('ativo')
-// }
+window.onload = function () {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
 
-// menuItem.forEach((item) =>
-//     item.addEventListener('click', selectLink)
-// )
-// expandir o menu
+    if (performance.navigation.type !== 1) {
+        document.querySelector(".links1 a[href='#top']").style.display = 'none';
+    }
 
-// var btnExp = document.querySelector('#btn-exp')
-// var menuSide = document.querySelector('.menu-lateral')
+    window.scrollTo(0, 0);
+};
 
-// btnExp.addEventListener('click', function () {
-//     menuSide.classList.toggle('expandir')
-// })
+// recarrega o site e volta para o inicio sem aparecer que está subindo,
+// usei junto o preloader, funciona nas 3 opções, F5, CTRL + F5 e também no botão de recarregar a página no navegador
 
 // expandir o menu
 const menuLateral = document.querySelector(".menu-lateral");
@@ -48,54 +44,3 @@ if (currentUrl.includes("index.html")) {
 
 
 
-// função para recarregar a página e voltar no início do site
-
-// Armazena a posição de rolagem antes de recarregar a página
-// window.addEventListener('beforeunload', function () {
-//     sessionStorage.setItem('scrollPosition', window.scrollY.toString());
-// });
-// Armazena a posição de rolagem antes de recarregar a página
-
-// Verifica se há uma posição de rolagem armazenada e a aplica após o carregamento da página
-// window.addEventListener('load', function () {
-//     var scrollPosition = sessionStorage.getItem('scrollPosition');
-
-//     if (scrollPosition !== null) {
-//         window.scrollTo(0, parseInt(scrollPosition, 10));
-//         sessionStorage.removeItem('scrollPosition'); // Limpa a posição de rolagem armazenada
-//     }
-
-//     document.body.style.display = 'block';
-// });
-// Verifica se há uma posição de rolagem armazenada e a aplica após o carregamento da página
-
-// Recarrega a página completamente quando a tecla F5 é pressionada
-// document.addEventListener('keydown', function (e) {
-//     if (e.key === 'F5') {
-//         e.preventDefault();
-//         sessionStorage.setItem('scrollPosition', window.scrollY.toString());
-//         document.body.style.display = 'none';
-//         window.location.reload(true);
-//     }
-// });
-// Recarrega a página completamente quando a tecla F5 é pressionada
-
-// função para recarregar a página e voltar no início do site
-
-
-
-//comando para subir o site ao topo quando clicar na div inicio
-const botao = document.querySelector(".inicio");
-const inicio = document.querySelector("#top"); // Adicione um ID à tag <body> para referenciá-la aqui
-botao.addEventListener("click", function (event) {
-    event.preventDefault();
-    inicio.scrollIntoView({ behavior: "smooth" });
-});
-window.addEventListener("scroll", function () {
-    if (window.scrollY === 0) {
-        botao.classList.remove("visible");
-    } else {
-        botao.classList.add("visible");
-    }
-});
-//comando para subir o site ao topo quando clicar na div inicio

@@ -2,25 +2,15 @@
 
 @media (min-width: 768px) {
 
-    html {
-        scroll-behavior: smooth;
-        background-color: black;
-    }
+    /* div1 */
 
-    /* 
-    body {
-        display: none;
-    } */
-
-    /* div2 */
-
-    .div2 img {
+    .div1 img {
         width: 100%;
         display: flex;
         object-fit: cover;
         margin: 0 auto;
     }
 
-    /* div2 */
+    /* div1 */
 
 }

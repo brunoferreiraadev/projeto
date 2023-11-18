@@ -2,15 +2,6 @@
 
 @media (min-width: 768px) {
 
-    html {
-        scroll-behavior: smooth;
-        background-color: black;
-    }
-
-    /* body {
-        display: none;
-    } */
-
     .title {
         background-color: #202020;
         text-align: center;
@@ -25,21 +16,6 @@
         font-size: 26px;
         letter-spacing: 2px;
     }
-
-    /* .title-esq {
-        background-color: #202020;
-        text-align: center;
-        padding: 5px;
-    }
-
-    .title-esq h1 {
-        color: #f2f2f2;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 30px;
-        letter-spacing: 2px;
-    } */
 
     .pai {
         display: flex;
