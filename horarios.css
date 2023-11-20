@@ -1,3 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* block-tit */
+    .block-tit {
+        background-color: #f2f2f2;
+        margin: 0px 15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-tit h1 {
+        padding: 30px 0px;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    /* block-tit */
+
+    /* block1 */
+    .block1 {
+        padding: 0px 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        color: #f2f2f2;
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+        width: 160px;
+    }
+
+    td {
+        background-color: #f2f2f2;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    th,
+    .dia-semana,
+    .horario {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        background-color: #ED1B24;
+        color: #f2f2f2;
+        text-transform: uppercase;
+    }
+
+    /* block1 */
+
+    /* block2 */
+    .block2 {
+        background-color: #ED1B24;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .block2 p {
+        padding: 5px 0px;
+        color: #f2f2f2;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    /* block2 */
+
+}
