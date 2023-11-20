@@ -19,7 +19,7 @@
 
     .pai {
         display: flex;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 
     .filha1 {
@@ -43,6 +43,7 @@
         background-color: white;
         margin: 0 auto;
         text-align: left;
+        align-items: center;
     }
 
     .filha2 p {
