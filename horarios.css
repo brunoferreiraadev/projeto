@@ -5,14 +5,14 @@
     /* block-tit */
     .block-tit {
         background-color: #f2f2f2;
-        margin: 0px 15px;
         text-align: center;
         justify-content: center;
+        margin: 0px 20px;
         align-items: center;
     }
 
     .block-tit h1 {
-        padding: 40px 0px;
+        padding: 50px 0px;
         color: black;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
@@ -24,7 +24,7 @@
 
     /* block1 */
     .block1 {
-        padding: 0px 15px;
+        padding: 0px 20px;
     }
 
     table {
